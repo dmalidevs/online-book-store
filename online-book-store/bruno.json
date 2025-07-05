@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Online-Book-Store",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
