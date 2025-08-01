@@ -19,8 +19,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('/admin/books', BookController::class);
 });
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
-Route::get('/books/create', [BookController::class, 'create'])->name('books.create');
+Route::view('/books/create', 'books.create')->name('books.create');
 Route::post('/books/store', [BookController::class, 'store'])->name('books.store');
 // Route::post('/cart', [CartController::class, 'add'])->name('cart.add');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
